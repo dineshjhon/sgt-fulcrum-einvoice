@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP TIMEOUT="" MODE="STANDALONE" DISABLED="true">
+  <COMMENT>sap document number</COMMENT>
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INVOIC01</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">TdDocuments.Sap:INVOIC01</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INFO_COPY</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">partnerNumber</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">idocNum</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INVOIC01</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">TdDocuments.Sap:INVOIC01</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INFO_COPY</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">partnerNumber</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/INVOIC01;4;0;TdDocuments.Sap:INVOIC01/_TDIT-SD_ZINVOIC01;2;0/IDOC;2;1/EDI_DC40;2;0/DOCNUM;1;0" TO="/idocNum;1;0" DISABLED="true">
+</MAPCOPY>
+</MAP>
+
+<INVOKE TIMEOUT="" SERVICE="pub.xml:documentToXMLString" VALIDATE-IN="$none" VALIDATE-OUT="$none" DISABLED="true">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">documentToXMLStringInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">attrPrefix</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">document</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">nsDecls</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">addHeader</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">encode</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">documentTypeName</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">generateRequiredTags</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">generateNilTags</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">enforceLegalXML</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">dtdHeaderInfo</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">bufferSize</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INVOIC01</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">TdDocuments.Sap:INVOIC01</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INFO_COPY</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">partnerNumber</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/INVOIC01;4;0;TdDocuments.Sap:INVOIC01" TO="/document;2;0">
+</MAPCOPY>
+</MAP>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="pub.xml:xmlStringToXMLNode" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT>Converting to XML node</COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">xmlStringToXMLNodeInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmldata</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$filedata</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$filestream</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">encoding</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">expandDTD</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">isXML</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>false</value>
+          <value>true</value>
+          <value>autoDetect</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">expandGeneralEntities</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+          <value>true</value>
+          <value>false</value>
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/xmldata;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">&lt;?xml version="1.0"?&gt;&lt;_TDIT-SD_ZINVOIC01&gt;&lt;IDOC BEGIN="1"&gt;&lt;EDI_DC40 SEGMENT="1"&gt;&lt;TABNAM&gt;&lt;![CDATA[EDI_DC40]]&gt;&lt;/TABNAM&gt;&lt;MANDT&gt;010&lt;/MANDT&gt;&lt;DOCNUM&gt;0000000409257743&lt;/DOCNUM&gt;&lt;DOCREL&gt;46C&lt;/DOCREL&gt;&lt;STATUS&gt;03&lt;/STATUS&gt;&lt;DIRECT&gt;1&lt;/DIRECT&gt;&lt;OUTMOD&gt;2&lt;/OUTMOD&gt;&lt;IDOCTYP&gt;&lt;![CDATA[/TDIT/SD_ZINVOIC01]]&gt;&lt;/IDOCTYP&gt;&lt;MESTYP&gt;INVOIC&lt;/MESTYP&gt;&lt;STD&gt;E&lt;/STD&gt;&lt;STDVRS&gt;810&lt;/STDVRS&gt;&lt;STDMES&gt;INVOIC&lt;/STDMES&gt;&lt;SNDPOR&gt;SAPPR1&lt;/SNDPOR&gt;&lt;SNDPRT&gt;LS&lt;/SNDPRT&gt;&lt;SNDPRN&gt;PR1-010&lt;/SNDPRN&gt;&lt;RCVPOR&gt;VENDORSD&lt;/RCVPOR&gt;&lt;RCVPRT&gt;LS&lt;/RCVPRT&gt;&lt;RCVPFC&gt;LS&lt;/RCVPFC&gt;&lt;RCVPRN&gt;&lt;![CDATA[EDI_US]]&gt;&lt;/RCVPRN&gt;&lt;CREDAT&gt;20191129&lt;/CREDAT&gt;&lt;CRETIM&gt;225245&lt;/CRETIM&gt;&lt;SERIAL&gt;20191129225244&lt;/SERIAL&gt;&lt;/EDI_DC40&gt;&lt;E1EDK01 SEGMENT="1"&gt;&lt;CURCY&gt;USD&lt;/CURCY&gt;&lt;WKURS&gt;1.00000&lt;/WKURS&gt;&lt;ZTERM&gt;A117&lt;/ZTERM&gt;&lt;BSART&gt;INVO&lt;/BSART&gt;&lt;BELNR&gt;8032438501&lt;/BELNR&gt;&lt;NTGEW&gt;25.450&lt;/NTGEW&gt;&lt;BRGEW&gt;25.450&lt;/BRGEW&gt;&lt;GEWEI&gt;LBR&lt;/GEWEI&gt;&lt;VSART&gt;W0&lt;/VSART&gt;&lt;VSART_BEZ&gt;FEDX GRND&lt;/VSART_BEZ&gt;&lt;RECIPNT_NO&gt;0038068403&lt;/RECIPNT_NO&gt;&lt;FKTYP&gt;L&lt;/FKTYP&gt;&lt;/E1EDK01&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;ZR&lt;/PARVW&gt;&lt;NAME1&gt;TECH DATA CORP&lt;/NAME1&gt;&lt;STRAS&gt;25121 NETWORK PLACE&lt;/STRAS&gt;&lt;ORT01&gt;CHICAGO&lt;/ORT01&gt;&lt;PSTLZ&gt;606731251&lt;/PSTLZ&gt;&lt;REGIO&gt;IL&lt;/REGIO&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;RS&lt;/PARVW&gt;&lt;LIFNR&gt;0038068403&lt;/LIFNR&gt;&lt;NAME1&gt;TD US&lt;/NAME1&gt;&lt;STRAS&gt;5350 Tech Data Dr&lt;/STRAS&gt;&lt;ORT01&gt;Clearwater&lt;/ORT01&gt;&lt;PSTLZ&gt;337603122&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;ORT02&gt;PINELLAS&lt;/ORT02&gt;&lt;REGIO&gt;FL&lt;/REGIO&gt;&lt;BNAME&gt;&lt;![CDATA[PR1_SD_ECS]]&gt;&lt;/BNAME&gt;&lt;PAORG&gt;0100&lt;/PAORG&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;1B&lt;/PARVW&gt;&lt;PARTN&gt;0030000917&lt;/PARTN&gt;&lt;NAME1&gt;Sony ISN Major Accounts&lt;/NAME1&gt;&lt;NAME2&gt;Jay Fraze&lt;/NAME2&gt;&lt;STRAS&gt;5350 Tech Data Dr&lt;/STRAS&gt;&lt;ORT01&gt;Clearwater&lt;/ORT01&gt;&lt;PSTLZ&gt;337603122&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;73512&lt;/TELF1&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;ANRED&gt;Company&lt;/ANRED&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;FL&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;1C&lt;/PARVW&gt;&lt;PARTN&gt;0030000047&lt;/PARTN&gt;&lt;NAME1&gt;SONY FULFILLMENT&lt;/NAME1&gt;&lt;NAME2&gt;MITCH REIMANN&lt;/NAME2&gt;&lt;NAME3&gt;SALES MANAGER&lt;/NAME3&gt;&lt;STRAS&gt;5350 Tech Data Dr&lt;/STRAS&gt;&lt;ORT01&gt;Clearwater&lt;/ORT01&gt;&lt;PSTLZ&gt;337603122&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;73501&lt;/TELF1&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;ANRED&gt;Company&lt;/ANRED&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;FL&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;1D&lt;/PARVW&gt;&lt;PARTN&gt;0030001190&lt;/PARTN&gt;&lt;NAME1&gt;SCMS&lt;/NAME1&gt;&lt;NAME2&gt;DOUG HALBERT&lt;/NAME2&gt;&lt;STRAS&gt;5350 Tech Data Dr&lt;/STRAS&gt;&lt;ORT01&gt;Clearwater&lt;/ORT01&gt;&lt;PSTLZ&gt;337603122&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;ANRED&gt;Company&lt;/ANRED&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;FL&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;AG&lt;/PARVW&gt;&lt;PARTN&gt;0038050434&lt;/PARTN&gt;&lt;NAME1&gt;SONY ELECTRONICS INC&lt;/NAME1&gt;&lt;NAME2&gt;DBA SONY REWARDS&lt;/NAME2&gt;&lt;NAME3&gt;&lt;![CDATA[CARD MARKETING &amp; SERVICE CO.]]&gt;&lt;/NAME3&gt;&lt;STRAS&gt;Sony Corp of America 1 Sony Dr&lt;/STRAS&gt;&lt;ORT01&gt;Park Ridge&lt;/ORT01&gt;&lt;PSTLZ&gt;076568003&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;201-930-6702&lt;/TELF1&gt;&lt;TELFX&gt;201-930-7023&lt;/TELFX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;ANRED&gt;Company&lt;/ANRED&gt;&lt;ORT02&gt;BERGEN&lt;/ORT02&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;NJ&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;RE&lt;/PARVW&gt;&lt;PARTN&gt;0038050434&lt;/PARTN&gt;&lt;NAME1&gt;SONY ELECTRONICS INC&lt;/NAME1&gt;&lt;NAME2&gt;DBA SONY REWARDS&lt;/NAME2&gt;&lt;NAME3&gt;&lt;![CDATA[CARD MARKETING &amp; SERVICE CO.]]&gt;&lt;/NAME3&gt;&lt;STRAS&gt;Sony Corp of America 1 Sony Dr&lt;/STRAS&gt;&lt;ORT01&gt;Park Ridge&lt;/ORT01&gt;&lt;PSTLZ&gt;076568003&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;201-930-6702&lt;/TELF1&gt;&lt;TELFX&gt;201-930-7023&lt;/TELFX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;ANRED&gt;Company&lt;/ANRED&gt;&lt;ORT02&gt;BERGEN&lt;/ORT02&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;NJ&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;RG&lt;/PARVW&gt;&lt;PARTN&gt;0038068403&lt;/PARTN&gt;&lt;NAME1&gt;SONY ELECTRONICS INC&lt;/NAME1&gt;&lt;NAME2&gt;DBA SONY REWARDS&lt;/NAME2&gt;&lt;NAME3&gt;&lt;![CDATA[CARD MARKETING &amp; SERVICE CO.]]&gt;&lt;/NAME3&gt;&lt;STRAS&gt;Sony Corp of America 1 Sony Dr&lt;/STRAS&gt;&lt;ORT01&gt;Park Ridge&lt;/ORT01&gt;&lt;PSTLZ&gt;076568003&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;201-930-6702&lt;/TELF1&gt;&lt;TELFX&gt;201-930-7023&lt;/TELFX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;ANRED&gt;Company&lt;/ANRED&gt;&lt;ORT02&gt;BERGEN&lt;/ORT02&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;NJ&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;BK&lt;/PARVW&gt;&lt;LIFNR&gt;0100&lt;/LIFNR&gt;&lt;NAME1&gt;Tech Data Corporation&lt;/NAME1&gt;&lt;NAME2&gt;PO Box 6260&lt;/NAME2&gt;&lt;STRAS&gt;5350 Tech Data Dr&lt;/STRAS&gt;&lt;ORT01&gt;Clearwater&lt;/ORT01&gt;&lt;COUNC&gt;FL&lt;/COUNC&gt;&lt;PSTLZ&gt;33760&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;727-539-7429&lt;/TELF1&gt;&lt;TELFX&gt;727-538-7008&lt;/TELFX&gt;&lt;REGIO&gt;FL&lt;/REGIO&gt;&lt;/E1EDKA1&gt;
+&lt;E1EDKA1 SEGMENT="1"&gt;&lt;PARVW&gt;ZM&lt;/PARVW&gt;&lt;NAME1&gt;Laurie Brown&lt;/NAME1&gt;&lt;/E1EDKA1&gt;&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;009&lt;/QUALF&gt;&lt;BELNR&gt;8032438501&lt;/BELNR&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDK02&gt;
+&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDK02&gt;&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDK02&gt;
+&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BELNR&gt;6028210915&lt;/BELNR&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDK02&gt;&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;012&lt;/QUALF&gt;&lt;BELNR&gt;7035894796&lt;/BELNR&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDK02&gt;
+&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;017&lt;/QUALF&gt;&lt;BELNR&gt;8032438501&lt;/BELNR&gt;&lt;/E1EDK02&gt;&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;014&lt;/QUALF&gt;&lt;BELNR&gt;0383725353&lt;/BELNR&gt;&lt;/E1EDK02&gt;
+&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;ZIR&lt;/QUALF&gt;&lt;BELNR&gt;8032438501&lt;/BELNR&gt;&lt;/E1EDK02&gt;&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;ZBO&lt;/QUALF&gt;&lt;BELNR&gt;00000000000000000&lt;/BELNR&gt;&lt;/E1EDK02&gt;
+&lt;E1EDK02 SEGMENT="1"&gt;&lt;QUALF&gt;ZVC&lt;/QUALF&gt;&lt;BELNR&gt;SONY&lt;/BELNR&gt;&lt;/E1EDK02&gt;&lt;E1EDK03 SEGMENT="1"&gt;&lt;IDDAT&gt;026&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDK03&gt;
+&lt;E1EDK03 SEGMENT="1"&gt;&lt;IDDAT&gt;001&lt;/IDDAT&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDK03&gt;&lt;E1EDK03 SEGMENT="1"&gt;&lt;IDDAT&gt;022&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDK03&gt;
+&lt;E1EDK03 SEGMENT="1"&gt;&lt;IDDAT&gt;012&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDK03&gt;&lt;E1EDK03 SEGMENT="1"&gt;&lt;IDDAT&gt;011&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDK03&gt;
+&lt;E1EDK03 SEGMENT="1"&gt;&lt;IDDAT&gt;024&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDK03&gt;&lt;E1EDK03 SEGMENT="1"&gt;&lt;IDDAT&gt;028&lt;/IDDAT&gt;&lt;DATUM&gt;20191229&lt;/DATUM&gt;&lt;/E1EDK03&gt;
+&lt;E1EDK03 SEGMENT="1"&gt;&lt;IDDAT&gt;035&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDK03&gt;&lt;E1EDK05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;YA33&lt;/KSCHL&gt;&lt;KOTXT&gt;ACTUAL FREIGHT&lt;/KOTXT&gt;&lt;BETRG&gt;14.00&lt;/BETRG&gt;&lt;KRATE&gt;0&lt;/KRATE&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;/E1EDK05&gt;
+&lt;E1EDK05 SEGMENT="1"&gt;&lt;ALCKZ&gt;-&lt;/ALCKZ&gt;&lt;KSCHL&gt;SKTO&lt;/KSCHL&gt;&lt;BETRG&gt;4.17-&lt;/BETRG&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;/E1EDK05&gt;
+&lt;E1EDK05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;ZNET&lt;/KSCHL&gt;&lt;BETRG&gt;416.82&lt;/BETRG&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;/E1EDK05&gt;
+&lt;E1EDK05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;YA33&lt;/KSCHL&gt;&lt;BETRG&gt;14.00&lt;/BETRG&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;/E1EDK05&gt;
+&lt;E1EDK17 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;LKOND&gt;FCA&lt;/LKOND&gt;&lt;LKTEXT&gt;Free Carrier&lt;/LKTEXT&gt;&lt;/E1EDK17&gt;&lt;E1EDK17 SEGMENT="1"&gt;&lt;QUALF&gt;ZXB&lt;/QUALF&gt;&lt;LKTEXT&gt;8032438501&lt;/LKTEXT&gt;&lt;/E1EDK17&gt;
+&lt;E1EDK17 SEGMENT="1"&gt;&lt;QUALF&gt;ZSV&lt;/QUALF&gt;&lt;LKOND&gt;W3&lt;/LKOND&gt;&lt;/E1EDK17&gt;&lt;E1EDK17 SEGMENT="1"&gt;&lt;QUALF&gt;ZDV&lt;/QUALF&gt;&lt;LKOND&gt;W3&lt;/LKOND&gt;&lt;LKTEXT&gt;FX GRD SigRq TV&lt;/LKTEXT&gt;&lt;/E1EDK17&gt;
+&lt;E1EDK18 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;TAGE&gt;18&lt;/TAGE&gt;&lt;PRZNT&gt;1.000&lt;/PRZNT&gt;&lt;ZTERM_TXT&gt;Up to 12/17/2019 you receive 1.000  % discount&lt;/ZTERM_TXT&gt;&lt;/E1EDK18&gt;
+&lt;E1EDK18 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;TAGE&gt;30&lt;/TAGE&gt;&lt;PRZNT&gt;0&lt;/PRZNT&gt;&lt;ZTERM_TXT&gt;Up to 12/29/2019 without deduction&lt;/ZTERM_TXT&gt;&lt;/E1EDK18&gt;
+&lt;E1EDK18 SEGMENT="1"&gt;&lt;QUALF&gt;SKT&lt;/QUALF&gt;&lt;PRZNT&gt;1.000&lt;/PRZNT&gt;&lt;ZTERM_TXT&gt;4.17&lt;/ZTERM_TXT&gt;&lt;/E1EDK18&gt;&lt;E1EDK28 SEGMENT="1"&gt;&lt;BCOUN&gt;US&lt;/BCOUN&gt;&lt;BRNUM&gt;026009593&lt;/BRNUM&gt;&lt;BNAME&gt;Bank of America  N.A.&lt;/BNAME&gt;&lt;BALOC&gt;NEW YORK,NY 10038&lt;/BALOC&gt;&lt;ACNUM&gt;3750158568&lt;/ACNUM&gt;&lt;ACNAM&gt;TD US&lt;/ACNAM&gt;&lt;/E1EDK28&gt;
+&lt;E1EDK28 SEGMENT="1"&gt;&lt;BCOUN&gt;US&lt;/BCOUN&gt;&lt;BRNUM&gt;111000012&lt;/BRNUM&gt;&lt;BNAME&gt;Bank of America, National Association&lt;/BNAME&gt;&lt;BALOC&gt;DALLAS 75237&lt;/BALOC&gt;&lt;ACNUM&gt;0101181981&lt;/ACNUM&gt;&lt;ACNAM&gt;TD US&lt;/ACNAM&gt;&lt;/E1EDK28&gt;
+&lt;E1EDK28 SEGMENT="1"&gt;&lt;BCOUN&gt;US&lt;/BCOUN&gt;&lt;BRNUM&gt;061112788&lt;/BRNUM&gt;&lt;BNAME&gt;Bank of America, National Association&lt;/BNAME&gt;&lt;BALOC&gt;CHARLOTTE 28255&lt;/BALOC&gt;&lt;ACNUM&gt;0101181981&lt;/ACNUM&gt;&lt;ACNAM&gt;TD US&lt;/ACNAM&gt;&lt;/E1EDK28&gt;
+&lt;E1EDK28 SEGMENT="1"&gt;&lt;BCOUN&gt;US&lt;/BCOUN&gt;&lt;BRNUM&gt;061000052&lt;/BRNUM&gt;&lt;BNAME&gt;Bank of America, National Association&lt;/BNAME&gt;&lt;BALOC&gt;CHARLOTTE 28255&lt;/BALOC&gt;&lt;ACNUM&gt;0101181981&lt;/ACNUM&gt;&lt;ACNAM&gt;TD US&lt;/ACNAM&gt;&lt;/E1EDK28&gt;
+&lt;E1EDKT1 SEGMENT="1"&gt;&lt;TDID&gt;ZOCR&lt;/TDID&gt;&lt;TSSPRAS&gt;D&lt;/TSSPRAS&gt;&lt;TSSPRAS_ISO&gt;DE&lt;/TSSPRAS_ISO&gt;&lt;E1EDKT2 SEGMENT="1"&gt;&lt;TDLINE&gt;&lt;![CDATA[0100000416828&gt;000000003806840380324385012+ 010563538&gt;]]&gt;&lt;/TDLINE&gt;&lt;TDFORMAT&gt;C1&lt;/TDFORMAT&gt;&lt;/E1EDKT2&gt;
+&lt;E1EDKT2 SEGMENT="1"&gt;&lt;TDLINE&gt;00 00000 03806 84038 03243 85012&lt;/TDLINE&gt;&lt;TDFORMAT&gt;C2&lt;/TDFORMAT&gt;&lt;/E1EDKT2&gt;
+&lt;/E1EDKT1&gt;&lt;E1EDK14 SEGMENT="1"&gt;&lt;QUALF&gt;008&lt;/QUALF&gt;&lt;ORGID&gt;0100&lt;/ORGID&gt;&lt;/E1EDK14&gt;&lt;E1EDK14 SEGMENT="1"&gt;&lt;QUALF&gt;007&lt;/QUALF&gt;&lt;ORGID&gt;00&lt;/ORGID&gt;&lt;/E1EDK14&gt;
+&lt;E1EDK14 SEGMENT="1"&gt;&lt;QUALF&gt;006&lt;/QUALF&gt;&lt;ORGID&gt;10&lt;/ORGID&gt;&lt;/E1EDK14&gt;&lt;E1EDK14 SEGMENT="1"&gt;&lt;QUALF&gt;015&lt;/QUALF&gt;&lt;ORGID&gt;ZZIV&lt;/ORGID&gt;&lt;/E1EDK14&gt;
+&lt;E1EDK14 SEGMENT="1"&gt;&lt;QUALF&gt;ZEX&lt;/QUALF&gt;&lt;ORGID&gt;US&lt;/ORGID&gt;&lt;/E1EDK14&gt;&lt;E1EDK14 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;ORGID&gt;0100&lt;/ORGID&gt;&lt;/E1EDK14&gt;
+&lt;E1EDP01 SEGMENT="1"&gt;&lt;POSEX&gt;000001&lt;/POSEX&gt;&lt;MENGE&gt;1.000&lt;/MENGE&gt;&lt;MENEE&gt;PCE&lt;/MENEE&gt;&lt;GEWEI&gt;LBR&lt;/GEWEI&gt;&lt;PSTYV&gt;YSTD&lt;/PSTYV&gt;&lt;WERKS&gt;A031&lt;/WERKS&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;ZEILE&gt;000010&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;BSARK&gt;ZZED&lt;/BSARK&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BELNR&gt;6028210915&lt;/BELNR&gt;&lt;ZEILE&gt;000100&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;016&lt;/QUALF&gt;&lt;BELNR&gt;7035894796&lt;/BELNR&gt;&lt;ZEILE&gt;000010&lt;/ZEILE&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;ZMX&lt;/QUALF&gt;&lt;BELNR&gt;1&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;029&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;001&lt;/IDDAT&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;011&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;025&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;027&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;023&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;022&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;IDTNR&gt;000000000012037906&lt;/IDTNR&gt;&lt;KTEXT&gt;KDL32W600D 32IN LCD TV&lt;/KTEXT&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;IDTNR&gt;KDL32W600D&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;IDTNR&gt;027242896505&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZPH&lt;/QUALF&gt;&lt;IDTNR&gt;001003610005009600&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZMK&lt;/QUALF&gt;&lt;IDTNR&gt;0000&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZTY&lt;/QUALF&gt;&lt;IDTNR&gt;AH&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;BETRG&gt;272.52&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;010&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;011&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;012&lt;/QUALF&gt;&lt;BETRG&gt;8.80&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;013&lt;/QUALF&gt;&lt;BETRG&gt;8.80&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;014&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;015&lt;/QUALF&gt;&lt;BETRG&gt;260.99&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;ZFR&lt;/QUALF&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDPA1 SEGMENT="1"&gt;&lt;PARVW&gt;WE&lt;/PARVW&gt;&lt;PARTN&gt;&lt;![CDATA[CPD_01DROP]]&gt;&lt;/PARTN&gt;&lt;NAME1&gt;KENNETH SMALLWOOD&lt;/NAME1&gt;&lt;STRAS&gt;7625 Maple Lawn Boulevard&lt;/STRAS&gt;&lt;ORT01&gt;Fulton&lt;/ORT01&gt;&lt;PSTLZ&gt;20759&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;(301) 332-1753&lt;/TELF1&gt;&lt;TELTX&gt;KENNETH SMALLWOOD&lt;/TELTX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;MD&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDPA1&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;YB25&lt;/KSCHL&gt;&lt;KOTXT&gt;ITEM SELL PRICE&lt;/KOTXT&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;KRATE&gt;263.72&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;015&lt;/KSCHL&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;KRATE&gt;263.72&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZI7&lt;/TDID&gt;&lt;TSSPRAS&gt;E&lt;/TSSPRAS&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;KDL32W600D 32IN LCD TV&lt;/TDLINE&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;XXI1&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSPR¦&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSQU¦1&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSLN¦1&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;_TDIT-Z1ADDE1 SEGMENT="1"&gt;&lt;EU_NAME&gt;KENNETH SMALLWOOD&lt;/EU_NAME&gt;&lt;EU_ADR1&gt;7625 Maple Lawn Boulevard&lt;/EU_ADR1&gt;&lt;EU_ADR2&gt;Suite #175&lt;/EU_ADR2&gt;&lt;EU_CITY&gt;Fulton&lt;/EU_CITY&gt;&lt;REGION&gt;MD&lt;/REGION&gt;&lt;EU_ZIP&gt;20759&lt;/EU_ZIP&gt;&lt;COUNTRY&gt;US&lt;/COUNTRY&gt;&lt;EU_CONTACT&gt;KENNETH SMALLWOOD&lt;/EU_CONTACT&gt;&lt;EU_PHONE&gt;(301) 332-1753&lt;/EU_PHONE&gt;&lt;CODTF&gt;00000000&lt;/CODTF&gt;&lt;CODTT&gt;00000000&lt;/CODTT&gt;&lt;HWPDT&gt;00000000&lt;/HWPDT&gt;&lt;/_TDIT-Z1ADDE1&gt;
+&lt;_TDIT-Z1ADDE3 SEGMENT="1"&gt;&lt;RESE_PO&gt;201966&lt;/RESE_PO&gt;&lt;EU_PO&gt;201966&lt;/EU_PO&gt;&lt;/_TDIT-Z1ADDE3&gt;&lt;_TDIT-Z1ADDE4 SEGMENT="1"&gt;&lt;ZLMNR&gt;SONY TV&lt;/ZLMNR&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/_TDIT-Z1ADDE4&gt;
+&lt;/E1EDP01&gt;&lt;E1EDP01 SEGMENT="1"&gt;&lt;POSEX&gt;000002&lt;/POSEX&gt;&lt;MENGE&gt;1.000&lt;/MENGE&gt;&lt;MENEE&gt;PCE&lt;/MENEE&gt;&lt;NTGEW&gt;16.000&lt;/NTGEW&gt;&lt;GEWEI&gt;LBR&lt;/GEWEI&gt;&lt;UEPOS&gt;000001&lt;/UEPOS&gt;&lt;BRGEW&gt;16.000&lt;/BRGEW&gt;&lt;PSTYV&gt;ZZEP&lt;/PSTYV&gt;&lt;WERKS&gt;A031&lt;/WERKS&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;ZEILE&gt;000010&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;BSARK&gt;ZZED&lt;/BSARK&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BELNR&gt;6028210915&lt;/BELNR&gt;&lt;ZEILE&gt;000101&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;016&lt;/QUALF&gt;&lt;BELNR&gt;7035894796&lt;/BELNR&gt;&lt;ZEILE&gt;000020&lt;/ZEILE&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;ZMX&lt;/QUALF&gt;&lt;BELNR&gt;1&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;029&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;001&lt;/IDDAT&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;011&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;025&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;027&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;023&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;022&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;IDTNR&gt;000000000012037906&lt;/IDTNR&gt;&lt;KTEXT&gt;KDL32W600D 32IN LCD TV&lt;/KTEXT&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;IDTNR&gt;KDL32W600D&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;IDTNR&gt;027242896505&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZPH&lt;/QUALF&gt;&lt;IDTNR&gt;001003610005009600&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZMK&lt;/QUALF&gt;&lt;IDTNR&gt;0000&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZTY&lt;/QUALF&gt;&lt;IDTNR&gt;AI&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;BETRG&gt;272.52&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;BETRG&gt;272.52&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;010&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;011&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;012&lt;/QUALF&gt;&lt;BETRG&gt;8.80&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;013&lt;/QUALF&gt;&lt;BETRG&gt;8.80&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;014&lt;/QUALF&gt;&lt;BETRG&gt;11.18&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;015&lt;/QUALF&gt;&lt;BETRG&gt;8.45&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;ZFR&lt;/QUALF&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDPA1 SEGMENT="1"&gt;&lt;PARVW&gt;WE&lt;/PARVW&gt;&lt;PARTN&gt;&lt;![CDATA[CPD_01DROP]]&gt;&lt;/PARTN&gt;&lt;NAME1&gt;KENNETH SMALLWOOD&lt;/NAME1&gt;&lt;STRAS&gt;7625 Maple Lawn Boulevard&lt;/STRAS&gt;&lt;ORT01&gt;Fulton&lt;/ORT01&gt;&lt;PSTLZ&gt;20759&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;(301) 332-1753&lt;/TELF1&gt;&lt;TELTX&gt;KENNETH SMALLWOOD&lt;/TELTX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;MD&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDPA1&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;YB25&lt;/KSCHL&gt;&lt;KOTXT&gt;ITEM SELL PRICE&lt;/KOTXT&gt;&lt;BETRG&gt;263.72&lt;/BETRG&gt;&lt;KRATE&gt;263.72&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;015&lt;/KSCHL&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;KRATE&gt;263.72&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZI7&lt;/TDID&gt;&lt;TSSPRAS&gt;E&lt;/TSSPRAS&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;KDL32W600D 32IN LCD TV&lt;/TDLINE&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;XXI1&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSPR¦&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSQU¦1&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSLN¦1&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZTR&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;919414079920876&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;_TDIT-SD_E1EDL11 SEGMENT="1"&gt;&lt;SERNR&gt;S0151172158&lt;/SERNR&gt;&lt;/_TDIT-SD_E1EDL11&gt;&lt;_TDIT-Z1ADDE1 SEGMENT="1"&gt;&lt;CODTF&gt;00000000&lt;/CODTF&gt;&lt;CODTT&gt;00000000&lt;/CODTT&gt;&lt;HWPDT&gt;00000000&lt;/HWPDT&gt;&lt;/_TDIT-Z1ADDE1&gt;
+&lt;_TDIT-Z1ADDE4 SEGMENT="1"&gt;&lt;ZLMNR&gt;SONY TV&lt;/ZLMNR&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/_TDIT-Z1ADDE4&gt;&lt;/E1EDP01&gt;&lt;E1EDP01 SEGMENT="1"&gt;&lt;POSEX&gt;000003&lt;/POSEX&gt;&lt;MENGE&gt;1.000&lt;/MENGE&gt;&lt;MENEE&gt;PCE&lt;/MENEE&gt;&lt;GEWEI&gt;LBR&lt;/GEWEI&gt;&lt;PSTYV&gt;YSTD&lt;/PSTYV&gt;&lt;WERKS&gt;A031&lt;/WERKS&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;ZEILE&gt;000020&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;BSARK&gt;ZZED&lt;/BSARK&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BELNR&gt;6028210915&lt;/BELNR&gt;&lt;ZEILE&gt;000200&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;016&lt;/QUALF&gt;&lt;BELNR&gt;7035894796&lt;/BELNR&gt;&lt;ZEILE&gt;000030&lt;/ZEILE&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;ZMX&lt;/QUALF&gt;&lt;BELNR&gt;1&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;029&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;001&lt;/IDDAT&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;011&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;025&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;027&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;023&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;022&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;IDTNR&gt;000000000013615159&lt;/IDTNR&gt;&lt;KTEXT&gt;WLS BT SPK BLK&lt;/KTEXT&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;IDTNR&gt;SRSXB22/B&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;IDTNR&gt;027242915329&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZPH&lt;/QUALF&gt;&lt;IDTNR&gt;001003610005006800&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZMK&lt;/QUALF&gt;&lt;IDTNR&gt;0000&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZTY&lt;/QUALF&gt;&lt;IDTNR&gt;AH&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;BETRG&gt;54.30&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;010&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;011&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;012&lt;/QUALF&gt;&lt;BETRG&gt;0.91&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;013&lt;/QUALF&gt;&lt;BETRG&gt;0.91&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;014&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;015&lt;/QUALF&gt;&lt;BETRG&gt;52.85&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;ZFR&lt;/QUALF&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDPA1 SEGMENT="1"&gt;&lt;PARVW&gt;WE&lt;/PARVW&gt;&lt;PARTN&gt;&lt;![CDATA[CPD_01DROP]]&gt;&lt;/PARTN&gt;&lt;NAME1&gt;KENNETH SMALLWOOD&lt;/NAME1&gt;&lt;STRAS&gt;7625 Maple Lawn Boulevard&lt;/STRAS&gt;&lt;ORT01&gt;Fulton&lt;/ORT01&gt;&lt;PSTLZ&gt;20759&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;(301) 332-1753&lt;/TELF1&gt;&lt;TELTX&gt;KENNETH SMALLWOOD&lt;/TELTX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;MD&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDPA1&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;YB25&lt;/KSCHL&gt;&lt;KOTXT&gt;ITEM SELL PRICE&lt;/KOTXT&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;KRATE&gt;53.39&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;015&lt;/KSCHL&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;KRATE&gt;53.39&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZI7&lt;/TDID&gt;&lt;TSSPRAS&gt;E&lt;/TSSPRAS&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;WLS BT SPK BLK&lt;/TDLINE&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;XXI1&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSLN¦2&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSQU¦1&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSPR¦&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;_TDIT-Z1ADDE1 SEGMENT="1"&gt;&lt;EU_NAME&gt;KENNETH SMALLWOOD&lt;/EU_NAME&gt;&lt;EU_ADR1&gt;7625 Maple Lawn Boulevard&lt;/EU_ADR1&gt;&lt;EU_ADR2&gt;Suite #175&lt;/EU_ADR2&gt;&lt;EU_CITY&gt;Fulton&lt;/EU_CITY&gt;&lt;REGION&gt;MD&lt;/REGION&gt;&lt;EU_ZIP&gt;20759&lt;/EU_ZIP&gt;&lt;COUNTRY&gt;US&lt;/COUNTRY&gt;&lt;EU_CONTACT&gt;KENNETH SMALLWOOD&lt;/EU_CONTACT&gt;&lt;EU_PHONE&gt;(301) 332-1753&lt;/EU_PHONE&gt;&lt;CODTF&gt;00000000&lt;/CODTF&gt;&lt;CODTT&gt;00000000&lt;/CODTT&gt;&lt;HWPDT&gt;00000000&lt;/HWPDT&gt;&lt;/_TDIT-Z1ADDE1&gt;
+&lt;_TDIT-Z1ADDE3 SEGMENT="1"&gt;&lt;RESE_PO&gt;201966&lt;/RESE_PO&gt;&lt;EU_PO&gt;201966&lt;/EU_PO&gt;&lt;/_TDIT-Z1ADDE3&gt;&lt;_TDIT-Z1ADDE4 SEGMENT="1"&gt;&lt;ZLMNR&gt;SONY PERSONAL AUDIO&lt;/ZLMNR&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/_TDIT-Z1ADDE4&gt;
+&lt;/E1EDP01&gt;&lt;E1EDP01 SEGMENT="1"&gt;&lt;POSEX&gt;000004&lt;/POSEX&gt;&lt;MENGE&gt;1.000&lt;/MENGE&gt;&lt;MENEE&gt;PCE&lt;/MENEE&gt;&lt;NTGEW&gt;1.650&lt;/NTGEW&gt;&lt;GEWEI&gt;LBR&lt;/GEWEI&gt;&lt;UEPOS&gt;000003&lt;/UEPOS&gt;&lt;BRGEW&gt;1.650&lt;/BRGEW&gt;&lt;PSTYV&gt;ZZEP&lt;/PSTYV&gt;&lt;WERKS&gt;A031&lt;/WERKS&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;ZEILE&gt;000020&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;BSARK&gt;ZZED&lt;/BSARK&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BELNR&gt;6028210915&lt;/BELNR&gt;&lt;ZEILE&gt;000201&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;016&lt;/QUALF&gt;&lt;BELNR&gt;7035894796&lt;/BELNR&gt;&lt;ZEILE&gt;000040&lt;/ZEILE&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;ZMX&lt;/QUALF&gt;&lt;BELNR&gt;1&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;029&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;001&lt;/IDDAT&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;011&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;025&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;027&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;023&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;022&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;IDTNR&gt;000000000013615159&lt;/IDTNR&gt;&lt;KTEXT&gt;WLS BT SPK BLK&lt;/KTEXT&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;IDTNR&gt;SRSXB22/B&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;IDTNR&gt;027242915329&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZPH&lt;/QUALF&gt;&lt;IDTNR&gt;001003610005006800&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZMK&lt;/QUALF&gt;&lt;IDTNR&gt;0000&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZTY&lt;/QUALF&gt;&lt;IDTNR&gt;AI&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;BETRG&gt;54.30&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;BETRG&gt;54.30&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;010&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;011&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;012&lt;/QUALF&gt;&lt;BETRG&gt;0.91&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;013&lt;/QUALF&gt;&lt;BETRG&gt;0.91&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;014&lt;/QUALF&gt;&lt;BETRG&gt;3.32&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;015&lt;/QUALF&gt;&lt;BETRG&gt;2.78&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;ZFR&lt;/QUALF&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDPA1 SEGMENT="1"&gt;&lt;PARVW&gt;WE&lt;/PARVW&gt;&lt;PARTN&gt;&lt;![CDATA[CPD_01DROP]]&gt;&lt;/PARTN&gt;&lt;NAME1&gt;KENNETH SMALLWOOD&lt;/NAME1&gt;&lt;STRAS&gt;7625 Maple Lawn Boulevard&lt;/STRAS&gt;&lt;ORT01&gt;Fulton&lt;/ORT01&gt;&lt;PSTLZ&gt;20759&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;(301) 332-1753&lt;/TELF1&gt;&lt;TELTX&gt;KENNETH SMALLWOOD&lt;/TELTX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;MD&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDPA1&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;YB25&lt;/KSCHL&gt;&lt;KOTXT&gt;ITEM SELL PRICE&lt;/KOTXT&gt;&lt;BETRG&gt;53.39&lt;/BETRG&gt;&lt;KRATE&gt;53.39&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;015&lt;/KSCHL&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;KRATE&gt;53.39&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZI7&lt;/TDID&gt;&lt;TSSPRAS&gt;E&lt;/TSSPRAS&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;WLS BT SPK BLK&lt;/TDLINE&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;XXI1&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSLN¦2&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSQU¦1&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSPR¦&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZTR&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;919414079918309&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;_TDIT-SD_E1EDL11 SEGMENT="1"&gt;&lt;SERNR&gt;S011133900&lt;/SERNR&gt;&lt;/_TDIT-SD_E1EDL11&gt;&lt;_TDIT-Z1ADDE1 SEGMENT="1"&gt;&lt;CODTF&gt;00000000&lt;/CODTF&gt;&lt;CODTT&gt;00000000&lt;/CODTT&gt;&lt;HWPDT&gt;00000000&lt;/HWPDT&gt;&lt;/_TDIT-Z1ADDE1&gt;
+&lt;_TDIT-Z1ADDE4 SEGMENT="1"&gt;&lt;ZLMNR&gt;SONY PERSONAL AUDIO&lt;/ZLMNR&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/_TDIT-Z1ADDE4&gt;&lt;/E1EDP01&gt;&lt;E1EDP01 SEGMENT="1"&gt;&lt;POSEX&gt;000005&lt;/POSEX&gt;&lt;MENGE&gt;1.000&lt;/MENGE&gt;&lt;MENEE&gt;PCE&lt;/MENEE&gt;&lt;GEWEI&gt;LBR&lt;/GEWEI&gt;&lt;PSTYV&gt;YSTD&lt;/PSTYV&gt;&lt;WERKS&gt;A031&lt;/WERKS&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;ZEILE&gt;000030&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;BSARK&gt;ZZED&lt;/BSARK&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BELNR&gt;6028210915&lt;/BELNR&gt;&lt;ZEILE&gt;000300&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;016&lt;/QUALF&gt;&lt;BELNR&gt;7035894796&lt;/BELNR&gt;&lt;ZEILE&gt;000050&lt;/ZEILE&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;ZMX&lt;/QUALF&gt;&lt;BELNR&gt;1&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;029&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;001&lt;/IDDAT&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;011&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;025&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;027&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;023&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;022&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;IDTNR&gt;000000000013101820&lt;/IDTNR&gt;&lt;KTEXT&gt;FY18 SOUNDBAR&lt;/KTEXT&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;IDTNR&gt;HTS100F&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;IDTNR&gt;027242908192&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZPH&lt;/QUALF&gt;&lt;IDTNR&gt;001003610005004900&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZMK&lt;/QUALF&gt;&lt;IDTNR&gt;0000&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZTY&lt;/QUALF&gt;&lt;IDTNR&gt;AH&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;BETRG&gt;90.00&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;010&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;011&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;012&lt;/QUALF&gt;&lt;BETRG&gt;4.29&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;013&lt;/QUALF&gt;&lt;BETRG&gt;4.29&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;014&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;015&lt;/QUALF&gt;&lt;BETRG&gt;84.81&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;ZFR&lt;/QUALF&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDPA1 SEGMENT="1"&gt;&lt;PARVW&gt;WE&lt;/PARVW&gt;&lt;PARTN&gt;&lt;![CDATA[CPD_01DROP]]&gt;&lt;/PARTN&gt;&lt;NAME1&gt;KENNETH SMALLWOOD&lt;/NAME1&gt;&lt;STRAS&gt;7625 Maple Lawn Boulevard&lt;/STRAS&gt;&lt;ORT01&gt;Fulton&lt;/ORT01&gt;&lt;PSTLZ&gt;20759&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;(301) 332-1753&lt;/TELF1&gt;&lt;TELTX&gt;KENNETH SMALLWOOD&lt;/TELTX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;MD&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDPA1&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;YB25&lt;/KSCHL&gt;&lt;KOTXT&gt;ITEM SELL PRICE&lt;/KOTXT&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;KRATE&gt;85.71&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;015&lt;/KSCHL&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;KRATE&gt;85.71&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZI7&lt;/TDID&gt;&lt;TSSPRAS&gt;E&lt;/TSSPRAS&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;FY18 SOUNDBAR&lt;/TDLINE&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;XXI1&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSLN¦3&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSQU¦1&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSPR¦&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;_TDIT-Z1ADDE1 SEGMENT="1"&gt;&lt;EU_NAME&gt;KENNETH SMALLWOOD&lt;/EU_NAME&gt;&lt;EU_ADR1&gt;7625 Maple Lawn Boulevard&lt;/EU_ADR1&gt;&lt;EU_ADR2&gt;Suite #175&lt;/EU_ADR2&gt;&lt;EU_CITY&gt;Fulton&lt;/EU_CITY&gt;&lt;REGION&gt;MD&lt;/REGION&gt;&lt;EU_ZIP&gt;20759&lt;/EU_ZIP&gt;&lt;COUNTRY&gt;US&lt;/COUNTRY&gt;&lt;EU_CONTACT&gt;KENNETH SMALLWOOD&lt;/EU_CONTACT&gt;&lt;EU_PHONE&gt;(301) 332-1753&lt;/EU_PHONE&gt;&lt;CODTF&gt;00000000&lt;/CODTF&gt;&lt;CODTT&gt;00000000&lt;/CODTT&gt;&lt;HWPDT&gt;00000000&lt;/HWPDT&gt;&lt;/_TDIT-Z1ADDE1&gt;
+&lt;_TDIT-Z1ADDE3 SEGMENT="1"&gt;&lt;RESE_PO&gt;201966&lt;/RESE_PO&gt;&lt;EU_PO&gt;201966&lt;/EU_PO&gt;&lt;/_TDIT-Z1ADDE3&gt;&lt;_TDIT-Z1ADDE4 SEGMENT="1"&gt;&lt;ZLMNR&gt;&lt;![CDATA[SONY HOME AUDIO &amp; VIDEO]]&gt;&lt;/ZLMNR&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/_TDIT-Z1ADDE4&gt;
+&lt;/E1EDP01&gt;&lt;E1EDP01 SEGMENT="1"&gt;&lt;POSEX&gt;000006&lt;/POSEX&gt;&lt;MENGE&gt;1.000&lt;/MENGE&gt;&lt;MENEE&gt;PCE&lt;/MENEE&gt;&lt;NTGEW&gt;7.800&lt;/NTGEW&gt;&lt;GEWEI&gt;LBR&lt;/GEWEI&gt;&lt;UEPOS&gt;000005&lt;/UEPOS&gt;&lt;BRGEW&gt;7.800&lt;/BRGEW&gt;&lt;PSTYV&gt;ZZEP&lt;/PSTYV&gt;&lt;WERKS&gt;A031&lt;/WERKS&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;ZEILE&gt;000030&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;BSARK&gt;ZZED&lt;/BSARK&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;044&lt;/QUALF&gt;&lt;BELNR&gt;201966&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BELNR&gt;6028210915&lt;/BELNR&gt;&lt;ZEILE&gt;000301&lt;/ZEILE&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;016&lt;/QUALF&gt;&lt;BELNR&gt;7035894796&lt;/BELNR&gt;&lt;ZEILE&gt;000060&lt;/ZEILE&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP02&gt;
+&lt;E1EDP02 SEGMENT="1"&gt;&lt;QUALF&gt;ZMX&lt;/QUALF&gt;&lt;BELNR&gt;1&lt;/BELNR&gt;&lt;/E1EDP02&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;029&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;001&lt;/IDDAT&gt;&lt;DATUM&gt;20191206&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;011&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;025&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;027&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;023&lt;/IDDAT&gt;&lt;DATUM&gt;20191129&lt;/DATUM&gt;&lt;/E1EDP03&gt;&lt;E1EDP03 SEGMENT="1"&gt;&lt;IDDAT&gt;022&lt;/IDDAT&gt;&lt;DATUM&gt;20191127&lt;/DATUM&gt;&lt;/E1EDP03&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;IDTNR&gt;000000000013101820&lt;/IDTNR&gt;&lt;KTEXT&gt;FY18 SOUNDBAR&lt;/KTEXT&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;IDTNR&gt;HTS100F&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;IDTNR&gt;027242908192&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZPH&lt;/QUALF&gt;&lt;IDTNR&gt;001003610005004900&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZMK&lt;/QUALF&gt;&lt;IDTNR&gt;0000&lt;/IDTNR&gt;&lt;/E1EDP19&gt;
+&lt;E1EDP19 SEGMENT="1"&gt;&lt;QUALF&gt;ZTY&lt;/QUALF&gt;&lt;IDTNR&gt;AI&lt;/IDTNR&gt;&lt;/E1EDP19&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;004&lt;/QUALF&gt;&lt;BETRG&gt;90.00&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;003&lt;/QUALF&gt;&lt;BETRG&gt;90.00&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;010&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;011&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;012&lt;/QUALF&gt;&lt;BETRG&gt;4.29&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;013&lt;/QUALF&gt;&lt;BETRG&gt;4.29&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;014&lt;/QUALF&gt;&lt;BETRG&gt;4.57&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;015&lt;/QUALF&gt;&lt;BETRG&gt;3.67&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;ZFR&lt;/QUALF&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;001&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;&lt;E1EDP26 SEGMENT="1"&gt;&lt;QUALF&gt;002&lt;/QUALF&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;/E1EDP26&gt;
+&lt;E1EDPA1 SEGMENT="1"&gt;&lt;PARVW&gt;WE&lt;/PARVW&gt;&lt;PARTN&gt;&lt;![CDATA[CPD_01DROP]]&gt;&lt;/PARTN&gt;&lt;NAME1&gt;KENNETH SMALLWOOD&lt;/NAME1&gt;&lt;STRAS&gt;7625 Maple Lawn Boulevard&lt;/STRAS&gt;&lt;ORT01&gt;Fulton&lt;/ORT01&gt;&lt;PSTLZ&gt;20759&lt;/PSTLZ&gt;&lt;LAND1&gt;US&lt;/LAND1&gt;&lt;TELF1&gt;(301) 332-1753&lt;/TELF1&gt;&lt;TELTX&gt;KENNETH SMALLWOOD&lt;/TELTX&gt;&lt;SPRAS&gt;E&lt;/SPRAS&gt;&lt;HAUSN&gt;000000&lt;/HAUSN&gt;&lt;REGIO&gt;MD&lt;/REGIO&gt;&lt;SPRAS_ISO&gt;EN&lt;/SPRAS_ISO&gt;&lt;/E1EDPA1&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;YB25&lt;/KSCHL&gt;&lt;KOTXT&gt;ITEM SELL PRICE&lt;/KOTXT&gt;&lt;BETRG&gt;85.71&lt;/BETRG&gt;&lt;KRATE&gt;85.71&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP05 SEGMENT="1"&gt;&lt;ALCKZ&gt;+&lt;/ALCKZ&gt;&lt;KSCHL&gt;015&lt;/KSCHL&gt;&lt;BETRG&gt;0&lt;/BETRG&gt;&lt;KRATE&gt;85.71&lt;/KRATE&gt;&lt;UPRBS&gt;1&lt;/UPRBS&gt;&lt;MEAUN&gt;PCE&lt;/MEAUN&gt;&lt;KOEIN&gt;USD&lt;/KOEIN&gt;&lt;KOBAS&gt;1.00&lt;/KOBAS&gt;&lt;/E1EDP05&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDP04 SEGMENT="1"&gt;&lt;MWSKZ&gt;UB&lt;/MWSKZ&gt;&lt;MSATZ&gt;0&lt;/MSATZ&gt;&lt;MWSBT&gt;0&lt;/MWSBT&gt;&lt;TXJCD&gt;2102700000&lt;/TXJCD&gt;&lt;/E1EDP04&gt;
+&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZI7&lt;/TDID&gt;&lt;TSSPRAS&gt;E&lt;/TSSPRAS&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;FY18 SOUNDBAR&lt;/TDLINE&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;XXI1&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSLN¦3&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSQU¦1&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;CUSPR¦&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;E1EDPT1 SEGMENT="1"&gt;&lt;TDID&gt;ZZTR&lt;/TDID&gt;&lt;TSSPRAS_ISO&gt;EN&lt;/TSSPRAS_ISO&gt;&lt;E1EDPT2 SEGMENT="1"&gt;&lt;TDLINE&gt;919414079929138&lt;/TDLINE&gt;&lt;TDFORMAT&gt;*&lt;/TDFORMAT&gt;&lt;/E1EDPT2&gt;
+&lt;/E1EDPT1&gt;&lt;_TDIT-SD_E1EDL11 SEGMENT="1"&gt;&lt;SERNR&gt;S0182320304&lt;/SERNR&gt;&lt;/_TDIT-SD_E1EDL11&gt;&lt;_TDIT-Z1ADDE1 SEGMENT="1"&gt;&lt;CODTF&gt;00000000&lt;/CODTF&gt;&lt;CODTT&gt;00000000&lt;/CODTT&gt;&lt;HWPDT&gt;00000000&lt;/HWPDT&gt;&lt;/_TDIT-Z1ADDE1&gt;
+&lt;_TDIT-Z1ADDE4 SEGMENT="1"&gt;&lt;ZLMNR&gt;&lt;![CDATA[SONY HOME AUDIO &amp; VIDEO]]&gt;&lt;/ZLMNR&gt;&lt;MFRNR&gt;SONY&lt;/MFRNR&gt;&lt;/_TDIT-Z1ADDE4&gt;
+&lt;/E1EDP01&gt;&lt;E1EDS01 SEGMENT="1"&gt;&lt;SUMID&gt;001&lt;/SUMID&gt;&lt;SUMME&gt;6&lt;/SUMME&gt;&lt;/E1EDS01&gt;&lt;E1EDS01 SEGMENT="1"&gt;&lt;SUMID&gt;012&lt;/SUMID&gt;&lt;SUMME&gt;833.64&lt;/SUMME&gt;&lt;WAERQ&gt;USD&lt;/WAERQ&gt;&lt;/E1EDS01&gt;
+&lt;E1EDS01 SEGMENT="1"&gt;&lt;SUMID&gt;005&lt;/SUMID&gt;&lt;SUMME&gt;0&lt;/SUMME&gt;&lt;WAERQ&gt;USD&lt;/WAERQ&gt;&lt;/E1EDS01&gt;&lt;E1EDS01 SEGMENT="1"&gt;&lt;SUMID&gt;011&lt;/SUMID&gt;&lt;SUMME&gt;416.82&lt;/SUMME&gt;&lt;WAERQ&gt;USD&lt;/WAERQ&gt;&lt;/E1EDS01&gt;
+&lt;E1EDS01 SEGMENT="1"&gt;&lt;SUMID&gt;Z01&lt;/SUMID&gt;&lt;SUMME&gt;           116076&lt;/SUMME&gt;&lt;SUNIT&gt;CDM&lt;/SUNIT&gt;&lt;/E1EDS01&gt;&lt;E1EDS01 SEGMENT="1"&gt;&lt;SUMID&gt;004&lt;/SUMID&gt;&lt;SUMME&gt;3.000&lt;/SUMME&gt;&lt;SUNIT&gt;PCE&lt;/SUNIT&gt;&lt;/E1EDS01&gt;
+&lt;E1EDS01 SEGMENT="1"&gt;&lt;SUMID&gt;010&lt;/SUMID&gt;&lt;SUMME&gt;416.82&lt;/SUMME&gt;&lt;WAERQ&gt;USD&lt;/WAERQ&gt;&lt;/E1EDS01&gt;&lt;EDI_DS40 SEGMENT="1"&gt;&lt;MANDT&gt;010&lt;/MANDT&gt;&lt;DOCNUM&gt;0000000409257743&lt;/DOCNUM&gt;&lt;LOGDAT&gt;20191129&lt;/LOGDAT&gt;&lt;LOGTIM&gt;225245&lt;/LOGTIM&gt;&lt;STATUS&gt;01&lt;/STATUS&gt;&lt;STAMNO&gt;000&lt;/STAMNO&gt;&lt;UNAME&gt;&lt;![CDATA[PR1_SD_ECS]]&gt;&lt;/UNAME&gt;&lt;SEGNUM&gt;000000&lt;/SEGNUM&gt;&lt;/EDI_DS40&gt;&lt;EDI_DS40 SEGMENT="1"&gt;&lt;MANDT&gt;010&lt;/MANDT&gt;&lt;DOCNUM&gt;0000000409257743&lt;/DOCNUM&gt;&lt;LOGDAT&gt;20191129&lt;/LOGDAT&gt;&lt;LOGTIM&gt;225245&lt;/LOGTIM&gt;&lt;STATUS&gt;30&lt;/STATUS&gt;&lt;STAMQU&gt;SAP&lt;/STAMQU&gt;&lt;STAMID&gt;B1&lt;/STAMID&gt;&lt;STAMNO&gt;006&lt;/STAMNO&gt;&lt;STATYP&gt;S&lt;/STATYP&gt;&lt;STAPA1&gt;Receiver exists&lt;/STAPA1&gt;&lt;STAPA2&gt;No filters&lt;/STAPA2&gt;&lt;STAPA3&gt;No conversion&lt;/STAPA3&gt;&lt;STAPA4&gt;No version change&lt;/STAPA4&gt;&lt;STATXT&gt;&lt;![CDATA[&amp;, &amp;, &amp;, &amp;]]&gt;&lt;/STATXT&gt;&lt;UNAME&gt;&lt;![CDATA[PR1_SD_ECS]]&gt;&lt;/UNAME&gt;&lt;SEGNUM&gt;000000&lt;/SEGNUM&gt;&lt;/EDI_DS40&gt;&lt;EDI_DS40 SEGMENT="1"&gt;&lt;MANDT&gt;010&lt;/MANDT&gt;&lt;DOCNUM&gt;0000000409257743&lt;/DOCNUM&gt;&lt;LOGDAT&gt;20191129&lt;/LOGDAT&gt;&lt;LOGTIM&gt;225245&lt;/LOGTIM&gt;&lt;STATUS&gt;03&lt;/STATUS&gt;&lt;STAMQU&gt;SAP&lt;/STAMQU&gt;&lt;STAMID&gt;EA&lt;/STAMID&gt;&lt;STAMNO&gt;083&lt;/STAMNO&gt;&lt;STATYP&gt;I&lt;/STATYP&gt;&lt;STAPA1&gt;A9991F3D00345DE1E7840150&lt;/STAPA1&gt;&lt;STATXT&gt;IDoc sent to R/3 System or external program&lt;/STATXT&gt;&lt;UNAME&gt;&lt;![CDATA[PR1_SD_ECS]]&gt;&lt;/UNAME&gt;&lt;REPID&gt;LEDI7F10&lt;/REPID&gt;&lt;SEGNUM&gt;000000&lt;/SEGNUM&gt;&lt;/EDI_DS40&gt;&lt;/IDOC&gt;&lt;/_TDIT-SD_ZINVOIC01&gt;</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">field</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">xmldata</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="field_opt">true</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmldata</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INVOIC01</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">TdDocuments.Sap:INVOIC01</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INFO_COPY</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">partnerNumber</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">node</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">xmlStringToXMLNodeOutput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPDELETE NAME="Dropper" FIELD="/xmldata;1;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="wm.tn.profile:getProfileFromDefaultExtID" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">getUserProfileInput</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">externalID</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/externalID;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">0038008516</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">externalID</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+</MAP>
+</INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="wm.tn.doc.xml:routeXml" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT>Route xml to TN</COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">node</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">TN_parms</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">ReceiverID</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/TN_parms;2;0/ReceiverID;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">0038008516</value>
+  <record name="type" javaclass="com.wm.util.Values">
+    <value name="node_type">unknown</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_name">ReceiverID</value>
+    <value name="field_type">string</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+  </record>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <MAPTARGET>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">externalID</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">TN_parms</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="node_type">unknown</value>
+            <value name="node_subtype">unknown</value>
+            <value name="is_public">false</value>
+            <value name="field_name">ReceiverID</value>
+            <value name="field_type">string</value>
+            <value name="field_dim">0</value>
+            <value name="nillable">true</value>
+            <value name="form_qualified">false</value>
+            <value name="is_global">false</value>
+          </record>
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INVOIC01</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">TdDocuments.Sap:INVOIC01</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">INFO_COPY</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">partnerNumber</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">field</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">node</value>
+        <value name="field_type">object</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">profile</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:Profile</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">xmlData</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">bizdoc</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:BizDocEnvelope</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">sender</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:ProfileSummary</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">receiver</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:ProfileSummary</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">flags</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:PreProcessingFlags</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">EDIDOC</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="wrapper_type">IData</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">EDIFFSchema.X12.V4010:T810DT</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
+        <value name="is_public">false</value>
+        <value name="field_name">idocNum</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPTARGET>
+  <MAPSOURCE>
+
+<Values version="2.0">
+  <record name="xml" javaclass="com.wm.util.Values">
+    <value name="node_type">record</value>
+    <value name="node_subtype">unknown</value>
+    <value name="is_public">false</value>
+    <value name="field_type">record</value>
+    <value name="field_dim">0</value>
+    <value name="nillable">true</value>
+    <value name="form_qualified">false</value>
+    <value name="is_global">false</value>
+    <array name="rec_fields" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">bizdoc</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:BizDocEnvelope</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">sender</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:ProfileSummary</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">receiver</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:ProfileSummary</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">TN_parms</value>
+        <value name="field_type">record</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <array name="rec_fields" type="record" depth="1">
+        </array>
+        <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">record</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">flags</value>
+        <value name="field_type">recref</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
+        <value name="rec_closed">true</value>
+        <value name="modifiable">true</value>
+        <value name="rec_ref">wm.tn.rec:PreProcessingFlags</value>
+      </record>
+    </array>
+    <value name="modifiable">true</value>
+  </record>
+</Values>
+</MAPSOURCE>
+
+  <!-- nodes -->
+
+<MAPDELETE NAME="Dropper" FIELD="/bizdoc;4;0;wm.tn.rec:BizDocEnvelope">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/sender;4;0;wm.tn.rec:ProfileSummary">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/receiver;4;0;wm.tn.rec:ProfileSummary">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/TN_parms;2;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/flags;4;0;wm.tn.rec:PreProcessingFlags">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/xmlData;1;0">
+</MAPDELETE>
+
+<MAPDELETE NAME="Dropper" FIELD="/node;3;0">
+</MAPDELETE>
+</MAP>
+</INVOKE>
+</FLOW>
