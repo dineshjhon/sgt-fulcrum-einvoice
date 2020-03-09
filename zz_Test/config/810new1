@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <record name="INVOIC01" javaclass="com.wm.data.ISMemDataImpl">
+      <array name="IDOC" type="record" depth="1">
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <record name="EDI_DC40" javaclass="com.wm.data.ISMemDataImpl">
+			<value name="TABNAM">EDI_DC40</value>
+			<value name="MANDT">080</value>
+			<value name="DOCNUM">0000000012993225</value>
+			<value name="DOCREL">740</value>
+			<value name="STATUS">30</value>
+			<value name="DIRECT">1</value>
+			<value name="OUTMOD">2</value>
+			<value name="IDOCTYP">INVOIC02</value>
+			<value name="MESTYP">INVOIC</value>
+			<value name="STD">E</value>
+			<value name="STDMES">INVOIC</value>
+			<value name="SNDPOR">SAPQAA</value>
+			<value name="SNDPRT">LS</value>
+			<value name="SNDPRN">QAACLNT080</value>
+			<value name="RCVPOR">WEBM8</value>
+			<value name="RCVPRT">KU</value>
+			<value name="RCVPFC">RE</value>
+			<value name="RCVPRN">0000745631</value>
+			<value name="CREDAT">20190606</value>
+			<value name="CRETIM">175355</value>
+			<value name="SERIAL">20190606175348</value>
+          </record>
+          <record name="E1EDK01" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="BSART">INVO</value>
+			<value name="CURCY">USD</value>
+			<value name="HWAER">USD</value>
+			<value name="WKURS">1.00000</value>
+			<value name="ZTERM">NT45</value>
+			<value name="BELNR>4102064739</value>
+			<value name="GEWEI">KGM</value>
+			<value name="FKART_RL">LR</value>
+			<value name="RECIPNT_NO">0000170685</value>
+			<value name="FKTYP">L</value>
+          </record>
+          <array name="E1EDKA1" type="record" depth="1">
+			<record javaclass="com.wm.data.ISMemDataImpl">
+			  <value name="PARVW">RS</value>
+			  <value name="LIFNR">0000170685</value>
+			  <value name="NAME1">GCC HK Broadcom</value>
+			  <value name="STRAS">20/F, Tower 2, Enterprise Square Fi</value>
+			  <value name="ORT01">Kowloon Bay,</value>
+			  <value name="LAND1">HK</value>
+			  <value name="TELF1">(852) 2197 2888</value>
+			  <value name="TELFX">(852) 2799 9826</value>
+			  <value name="SPRAS">E</value>
+			  <value name="ORT02">38 Wang Chiu Road,</value>
+			  <value name="REGIO">KLN</value>
+			  <value name="BNAME">P02716</value>
+			  <value name="PAORG">HK97</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+			  <value name="PARVW">AG</value>
+			  <value name="PARTN">0000170685</value>
+			  <value name="NAME1">Lenovo Systems Technology Company L</value>
+			  <value name="STRAS">No. 30 Taohua Road</value>
+			  <value name="ORT01">Shenzhen</value>
+			  <value name="PSTLZ">518045</value>
+			  <value name="LAND1">CN</value>
+			  <value name="SPRAS">E</value>
+			  <value name="ANRED">Company</value>
+			  <value name="ORT02">Futian Free Trade Zone</value>
+			  <value name="REGIO">190</value>
+			  <value name="SPRAS_ISO">EN</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+			  <value name="PARVW">RE</value>
+			  <value name="PARTN">0000170685</value>
+			  <value name="NAME1">Lenovo Systems Technology Company L</value>
+			  <value name="STRAS">No. 30 Taohua Road</value>
+			  <value name="ORT01">Shenzhen</value>
+			  <value name="PSTLZ">518045</value>
+			  <value name="LAND1">CN</value>
+			  <value name="SPRAS">E</value>
+			  <value name="ANRED">Company</value>
+			  <value name="ORT02">Futian Free Trade Zone</value>
+			  <value name="REGIO">190</value>
+			  <value name="SPRAS_ISO">EN</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+			  <value name="PARVW">RG</value>
+			  <value name="PARTN">0000170685</value>
+			  <value name="NAME1">Lenovo Systems Technology Company L</value>
+			  <value name="STRAS">No. 30 Taohua Road</value>
+			  <value name="ORT01">Shenzhen</value>
+			  <value name="PSTLZ">518045</value>
+			  <value name="LAND1">CN</value>
+			  <value name="SPRAS">E</value>  
+			  <value name="ANRED">Company</value>
+			  <value name="ORT02">Futian Free Trade Zone</value>
+			  <value name="REGIO">190</value>
+			  <value name="SPRAS_ISO">EN</value>
+			</record>
+          </array>
+          <array name="E1EDK02" type="record" depth="1">
+            <record javaclass="com.wm.data.ISMemDataImpl">
+             <value name="QUALF">009</value>
+             <value name="BELNR">4102064739</value>
+			 <value name="DATUM>20181128</value>
+           </record>
+		   <record javaclass="com.wm.data.ISMemDataImpl">
+             <value name="QUALF">001</value>
+             <value name="BELNR">5500091455</value>
+			 <value name="DATUM>20181128</value>
+           </record>
+		   <record javaclass="com.wm.data.ISMemDataImpl">
+             <value name="QUALF">002</value>
+             <value name="BELNR">0003794009</value>
+			 <value name="DATUM>20181128</value>
+           </record>
+		   <record javaclass="com.wm.data.ISMemDataImpl">
+             <value name="QUALF">012</value>
+             <value name="BELNR">0080676019</value>
+			 <value name="DATUM>20181128</value>
+           </record>
+		   <record javaclass="com.wm.data.ISMemDataImpl">
+             <value name="QUALF">017</value>
+             <value name="BELNR">4102064739</value>
+           </record>
+		   <record javaclass="com.wm.data.ISMemDataImpl">
+             <value name="QUALF">087</value>
+             <value name="BELNR">5500091455</value>
+           </record>
+          </array>
+          <array name="E1EDK03" type="record" depth="1">
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">026</value>
+              <value name="DATUM">20181128</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">001</value>
+              <value name="DATUM">20181128</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">012</value>
+              <value name="DATUM">20181128</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">022</value>
+              <value name="DATUM">20181128</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">012</value>
+              <value name="DATUM">20181128</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">011</value>
+              <value name="DATUM">20190606</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">024</value>
+              <value name="DATUM">20181128</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">028</value>
+              <value name="DATUM">20190112</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="IDDAT">048</value>
+              <value name="DATUM">20181128</value>
+            </record>
+          </array>
+		  <array name="E1EDK28" type="record" depth="1">
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@SEGMENT">1</value>
+			  <value name="BCOUN">HK</value>
+			  <value name="BRNUM">BOA</value>
+			  <value name="BNAME">Bank Of Amerika</value>
+			  <value name="ACNUM">605571782010</value>
+			  <value name="ACNAM">GCC HK Broadcom</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@SEGMENT">1</value>
+			  <value name="BCOUN">GB</value>
+			  <value name="BRNUM">IHC-GB00</value>
+			  <value name="BNAME">IHC-GB00</value>
+			  <value name="BALOC">City</value>
+			  <value name="ACNUM">605571782010</value>
+			  <value name="ACNAM">GCC HK Broadcom</value>
+            </record>
+          </array>
+          <array name="E1EDK14" type="record" depth="1">
+           <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="QUALF">008</value>
+			  <value name="ORGID">HK97</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="QUALF">007</value>
+			  <value name="ORGID">10</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="QUALF">006</value>
+			  <value name="ORGID">10</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="QUALF">015</value>
+			  <value name="ORGID">F2</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="QUALF">003</value>
+			  <value name="ORGID">HK90</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="QUALF">021</value>
+			  <value name="ORGID">M</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="QUALF">016</value>
+			  <value name="ORGID">HK97</value>
+            </record>
+          </array>
+		  	      <array name="E1EDK18" type="record" depth="1">
+           <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@SEGMENT">1</value>
+			  <value name="QUALF">005</value>
+			  <value name="ZTERM_TXT">Within 45 days Due Net</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@SEGMENT">1</value>
+			  <value name="QUALF">001</value>
+			  <value name="TAGE">45</value>
+			  <value name="PRZNT">0</value>
+			  <value name="ZTERM_TXT">Up to 12.01.2019 without deduction</value>
+            </record>
+          </array>
+		  <array name="E1EDK17" type="record" depth="1">
+           <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@SEGMENT">1</value>
+			  <value name="QUALF">001</value>
+			  <value name="LKOND">FCA</value>
+			  <value name="LKTEXT">Free Carrier</value>
+            </record>
+			<record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="@SEGMENT">1</value>
+			  <<value name="@SEGMENT">1</value>
+			  <value name="QUALF">002</value>
+			  <value name="LKOND">FCA</value>
+			  <value name="LKTEXT">Shenzhen</value>
+            </record>
+          </array>
+          <array name="E1EDP01" type="record" depth="1">
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="MENGE">1</value>
+              <value name="MENEE">EA</value>
+              <value name="MATNR">7147</value>
+              <value name="MATNR_EXTERNAL">7147-HWMA</value>
+              <array name="E1EDP02" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">001</value>
+                  <value name="BELNR">6200305913</value>
+                  <value name="ZEILE">000001</value>
+                </record>
+              </array>
+              <array name="E1EDP19" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@SEGMENT">1</value>
+                  <value name="QUALF">002</value>
+                  <value name="MFRPN">7147</value>
+                </record>
+              </array>
+              <array name="E1EDP26" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">003</value>
+                  <value name="BETRG">499.50</value>
+                </record>
+              </array>
+              <array name="E1EDPT1" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <array name="E1EDPT2" type="record" depth="1">
+                    <record javaclass="com.wm.data.ISMemDataImpl">
+                      <value name="TDLINE">06K0842</value>
+                    </record>
+                  </array>
+                </record>
+              </array>
+            </record>
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="MENGE">1</value>
+              <value name="MENEE">EA</value>
+              <value name="MATNR">7147</value>
+              <value name="MATNR_EXTERNAL">7147-HWMA</value>
+              <array name="E1EDP02" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">001</value>
+                  <value name="BELNR">6200305913</value>
+                  <value name="ZEILE">000002</value>
+                </record>
+              </array>
+              <array name="E1EDP19" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@SEGMENT">1</value>
+                  <value name="QUALF">002</value>
+                  <value name="MFRPN">7147</value>
+                </record>
+              </array>
+              <array name="E1EDP26" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">003</value>
+                  <value name="BETRG">499.50</value>
+                </record>
+              </array>
+              <array name="E1EDPT1" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <array name="E1EDPT2" type="record" depth="1">
+                    <record javaclass="com.wm.data.ISMemDataImpl">
+                      <value name="TDLINE">06K0843</value>
+                    </record>
+                  </array>
+                </record>
+              </array>
+            </record>
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="MENGE">1</value>
+              <value name="MENEE">EA</value>
+              <value name="MATNR">7147</value>
+              <value name="MATNR_EXTERNAL">7147-HWMA</value>
+              <array name="E1EDP02" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">001</value>
+                  <value name="BELNR">6200305913</value>
+                  <value name="ZEILE">000003</value>
+                </record>
+              </array>
+              <array name="E1EDP19" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">002</value>
+                  <value name="MFRNR">7147</value>
+                </record>
+              </array>
+              <array name="E1EDP26" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">003</value>
+                  <value name="BETRG">499.50</value>
+                </record>
+              </array>
+              <array name="E1EDPT1" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <array name="E1EDPT2" type="record" depth="1">
+                    <record javaclass="com.wm.data.ISMemDataImpl">
+                      <value name="TDLINE">06K0841</value>
+                    </record>
+                  </array>
+                </record>
+              </array>
+            </record>
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="MENGE">1</value>
+              <value name="MENEE">EA</value>
+              <value name="MATNR">7147</value>
+              <value name="MATNR_EXTERNAL">7147-HWMA</value>
+              <array name="E1EDP02" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">001</value>
+                  <value name="BELNR">6200305913</value>
+                  <value name="ZEILE">000005</value>
+                </record>
+              </array>
+              <array name="E1EDP19" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="@SEGMENT">1</value>
+                  <value name="QUALF">002</value>
+                  <value name="MFRPN">7147</value>
+                </record>
+              </array>
+              <array name="E1EDP26" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <value name="QUALF">003</value>
+                  <value name="BETRG">499.50</value>
+                </record>
+              </array>
+              <array name="E1EDPT1" type="record" depth="1">
+                <record javaclass="com.wm.data.ISMemDataImpl">
+                  <array name="E1EDPT2" type="record" depth="1">
+                    <record javaclass="com.wm.data.ISMemDataImpl">
+                      <value name="TDLINE">06W7613</value>
+                    </record>
+                  </array>
+                </record>
+              </array>
+            </record>
+          </array>
+          <array name="E1EDS01" type="record" depth="1">
+            <record javaclass="com.wm.data.ISMemDataImpl">
+              <value name="SUMID">011</value>
+              <value name="SUMME">2497.5</value>
+            </record>
+          </array>
+        </record>
+      </array>
+    </record>
+  </record>
+</IDataXMLCoder>
